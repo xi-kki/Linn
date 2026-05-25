@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import WaveBackground from '../components/WaveBackground'
 import AnimatedNumber from '../components/AnimatedNumber'
 import Footer from '../components/Footer'
-import { LayoutDashboard, Gem } from 'lucide-react'
+import { LayoutDashboard, Gem, Zap, Lock } from 'lucide-react'
 
 const features = [
   {
@@ -12,12 +12,12 @@ const features = [
     desc: 'Ethereum, Solana, Base, Arbitrum, Polygon, Sui. All your wallets, all your chains — unified into a single comprehensive dashboard.',
   },
   {
-    icon: '⚡',
+    icon: <Zap className="w-12 h-12 text-electric-teal" />,
     title: 'Live. Not Lagging.',
     desc: 'Real-time prices, balances, and portfolio values streaming direct from chain. No refresh button needed.',
   },
   {
-    icon: '🔒',
+    icon: <Lock className="w-12 h-12 text-electric-teal" />,
     title: 'Self-Custody First.',
     desc: 'We never touch your keys. No accounts, no sign-ups, no custodial risk. Just pure, read-only transparency.',
   },
